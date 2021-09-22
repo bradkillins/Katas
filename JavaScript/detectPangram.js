@@ -1,5 +1,7 @@
-function isPangram(string) {
-  return "abcdefghijklmnopqrstuvwxyz"
+/* Determines if a string input is a Panagram (contains every letter of the alphabet) */
+
+const isPangram = (str) =>
+  "abcdefghijklmnopqrstuvwxyz"
     .split("")
-    .every((l) => string.toLowerCase().includes(l));
-}
+    .every((letter) => str.toLowerCase().includes(letter));
+
